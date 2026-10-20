@@ -36,10 +36,14 @@ public class GameLogic
     {
         this.gridSize = Mathf.Max(3, gridSize);
         this.maxLevel = Mathf.Max(2, maxLevel);
-        this.maxTurns = Mathf.Max(4, maxTurns);
+        // maxTurns <= 0 = infinito: solo se gana eliminando al rival.
+        this.maxTurns = maxTurns;
         owner = new int[this.gridSize, this.gridSize];
         level = new int[this.gridSize, this.gridSize];
     }
+
+    /// <summary>Sin limite de turnos: se juega hasta eliminar al enemigo.</summary>
+    public bool IsInfinite => maxTurns <= 0;
 
     public void Reset()
     {
@@ -81,9 +85,9 @@ public class GameLogic
 
         res.success = true;
         res.winner = GetWinner();
-        res.gameOver = res.winner != 0 || totalMoves >= maxTurns;
+        res.gameOver = res.winner != 0 || (!IsInfinite && totalMoves >= maxTurns);
         if (res.gameOver && res.winner == 0)
-            res.winner = WinnerByCells(); // desempate a 30 turnos (0 = empate real)
+            res.winner = WinnerByCells(); // desempate a maxTurns (0 = empate real)
 
         if (!res.gameOver)
             currentPlayer = currentPlayer == 1 ? 2 : 1;

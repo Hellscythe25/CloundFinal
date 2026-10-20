@@ -28,16 +28,31 @@ public class CellVisuals : MonoBehaviour
     [Header("Arte del pack (0tapa + 4 clips)")]
     public GameObject glassPrefab;
     [Header("Cristal (0tapa: NUNCA se tinta, solo transparencia)")]
-    [Tooltip("1 = solido, 0 = invisible. 70% transparente = 0.3.")]
-    [Range(0f, 1f)] public float glassAlpha = 0.3f;
+    [Tooltip("1 = respeta el alpha del PNG (el vidrio ya trae su transparencia horneada). Menos = mas tenue.")]
+    [Range(0f, 1f)] public float glassAlpha = 1f;
 
-    [Header("Burbujas (prueba, apagado por ahora)")]
+    [Header("Brillo del liquido")]
+    [Tooltip("Los sprites estan desaturados (brillo max ~0.74). 1.4 devuelve el brillo pleno. Mas alto = mas vivo.")]
+    [Range(0.5f, 2.5f)] public float colorBoost = 1.4f;
+
+[Header("Burbujas (prueba, apagado por ahora)")]
     public bool bubbles = false;
-    [Tooltip("Burbujas por segundo en nivel 3. Se escala por nivel.")]
-    public float bubbleRate = 6f;
-    public float bubbleSize = 0.09f;
-    public float bubbleRise = 0.35f;
+    [Tooltip("Arrastra 5-8 burbujas favoritas de particulas/brubujas (despliega la flecha, multi-selecciona, arrastra). Cada particula usa una al azar.")]
+    public Sprite[] bubbleSprites;
+    [Tooltip("Burbujas por segundo en nivel 3. Menos = mas espaciadas.")]
+    public float bubbleRate = 2.5f;
+    public float bubbleSize = 0.07f;
+    [Tooltip("Velocidad de subida. La vida se recalcula sola (distancia/velocidad) para morir en la superficie.")]
+    public float bubbleRise = 0.5f;
+    [Tooltip("Deriva lateral. 0 = suben recto.")]
+    [Range(0f, 0.2f)] public float bubbleDrift = 0.01f;
+    [Tooltip("Transparencia. 1 = solido, 0 = invisible.")]
+    [Range(0f, 1f)] public float bubbleAlpha = 0.55f;
     public int bubbleOrder = 1;
+    [Header("Superficie del liquido por nivel (0=abajo, 1=arriba de la celda)")]
+    [Range(0f, 1f)] public float surface1 = 0.32f;
+    [Range(0f, 1f)] public float surface2 = 0.55f;
+    [Range(0f, 1f)] public float surface3 = 0.78f;
     public AnimationClip clip1;
     public AnimationClip clip2;
     public AnimationClip clip3;
@@ -58,6 +73,14 @@ public class CellVisuals : MonoBehaviour
     [Range(1, 96)] public int numberFontSize = 28;
     [Tooltip("Lado de la caja del numero en celdas.")]
     [Range(0.1f, 1f)] public float numberSize = 0.25f;
+
+    [Header("Sonido de explosion (prueba A/B)")]
+    public AudioClip boomSoundA;
+    public AudioClip boomSoundB;
+    public enum BoomSoundMode { A = 0, B = 1, Alternar = 2 }
+    [Tooltip("A = solo A, B = solo B, Alternar = uno y uno para comparar en partida.")]
+    public BoomSoundMode boomSound = BoomSoundMode.Alternar;
+    [Range(0f, 1f)] public float boomVolume = 0.8f;
 
     [Header("Feel")]
     public float shakeDuration = 0.22f;
@@ -116,12 +139,32 @@ public class CellVisuals : MonoBehaviour
     private Vector3 camHome;
     private bool camHomeSet;
     private bool shaking;
+    private bool useA = true;
+
+    // Fuente unica compartida: si hubiera dos CellVisuals (escena + AddComponent),
+    // seguiria habiendo un solo canal y el volumen no se duplica.
+    private static AudioSource sharedSfx;
 
     /// <summary>Escala para llevar un sprite del atlas a 1 unidad de celda.</summary>
     private float unitScale = 1f;
 
     /// <summary>Salidas vivas del grafo. En 0 el grafo se detiene y no avisa.</summary>
     private int liveOutputs = 0;
+
+    private string activePackId = "";
+
+    private void Update()
+    {
+        // Si el jugador cambio de pack en el menu, reconstruye con el nuevo arte.
+        var current = BoardFx.Current;
+        string id = current != null ? current.id : "clasico";
+        if (id != activePackId)
+        {
+            activePackId = id;
+            pack = current ?? FxPackCatalog.Get("clasico");
+            Rebuild();
+        }
+    }
 
     /// <summary>
     /// El aviso "being evaluated with no outputs" sale cuando el grafo corre
@@ -144,8 +187,10 @@ public class CellVisuals : MonoBehaviour
 
     private void Awake()
     {
-        FxPackCatalog.AttachArt(packId, glassPrefab, clip1, clip2, clip3, clipBoom, speed1, speed2, speed3, speedBoom);
+        FxPackCatalog.AttachArt(packId, glassPrefab, clip1, clip2, clip3, clipBoom, speed1, speed2, speed3, speedBoom, bubbleSprites);
+        BoardFx.ColorBoost = colorBoost;
         pack = FxPackCatalog.Get(packId) ?? FxPackCatalog.Get("clasico");
+        activePackId = pack != null ? pack.id : "clasico";
 
         if (pack == null || !pack.HasArt)
         {
@@ -406,42 +451,117 @@ graph = PlayableGraph.Create("CellVisuals");
         var main = ps.main;
         main.loop = true;
         main.duration = 3f;
-        main.startLifetime = new ParticleSystem.MinMaxCurve(1.2f, 2.2f);
-        main.startSpeed = new ParticleSystem.MinMaxCurve(bubbleRise * 0.7f, bubbleRise * 1.3f);
-        main.startSize = new ParticleSystem.MinMaxCurve(bubbleSize * 0.6f, bubbleSize * 1.4f);
-        main.startColor = new Color(1f, 1f, 1f, 0.85f);
+        // La vida util se ajusta por nivel (UpdateBubbleZone) para que mueran
+        // justo al llegar a la superficie. Aqui un valor base.
+        main.startLifetime = 1.5f;
+        // Velocidad inicial 0: la direccion la manda velocityOverLifetime en +Y.
+        // (La velocidad inicial sale en +Z local = hacia la camara, no sirve en 2D.)
+        main.startSpeed = 0f;
+        main.startSize = new ParticleSystem.MinMaxCurve(bubbleSize * 0.85f, bubbleSize * 1.15f);
+        main.startColor = new Color(1f, 1f, 1f, bubbleAlpha);
         main.simulationSpace = ParticleSystemSimulationSpace.Local;
         main.playOnAwake = false;
 
         var em = ps.emission;
         em.rateOverTime = 0f;
 
+        // Nacen abajo, en una franja angosta dentro del liquido.
         var shape = ps.shape;
         shape.shapeType = ParticleSystemShapeType.Box;
-        shape.scale = new Vector3(BoardFx.CellSize * 0.6f, 0.05f, 0.1f);
-        shape.position = new Vector3(0f, -BoardFx.CellSize * 0.3f, 0f);
+        shape.scale = new Vector3(BoardFx.CellSize * 0.55f, 0.06f, 0.1f);
+        shape.position = new Vector3(0f, -BoardFx.CellSize * 0.32f, 0f);
 
+        // Subida en +Y explicita. Las 3 curvas en el MISMO modo (TwoConstants)
+        // o Unity lanza "must all be in the same mode" y el modulo no corre.
+        // Rango angosto = suben parejas y espaciadas, sin apelotonarse.
         var vel = ps.velocityOverLifetime;
         vel.enabled = true;
         vel.space = ParticleSystemSimulationSpace.Local;
-        vel.y = new ParticleSystem.MinMaxCurve(0.1f, 0.3f);
+        vel.x = new ParticleSystem.MinMaxCurve(-bubbleDrift, bubbleDrift);
+        vel.y = new ParticleSystem.MinMaxCurve(bubbleRise * 0.9f, bubbleRise * 1.1f);
+        vel.z = new ParticleSystem.MinMaxCurve(0f, 0f);
+
+        // Crecen un poco al subir (menos presion) y revientan al final:
+        // alpha lleno casi toda la vida, pop rapido al morir.
+        var size = ps.sizeOverLifetime;
+        size.enabled = true;
+        size.size = new ParticleSystem.MinMaxCurve(0.8f, 1.25f);
+
+        var col = ps.colorOverLifetime;
+        col.enabled = true;
+        var g = new Gradient();
+        g.SetKeys(
+            new GradientColorKey[] { new GradientColorKey(Color.white, 0f), new GradientColorKey(Color.white, 1f) },
+            new GradientAlphaKey[] { new GradientAlphaKey(0f, 0f), new GradientAlphaKey(1f, 0.12f), new GradientAlphaKey(1f, 0.82f), new GradientAlphaKey(0f, 1f) }
+        );
+        col.color = g;
 
         var rend = ps.GetComponent<ParticleSystemRenderer>();
         rend.sortingOrder = bubbleOrder;
+
+        // Si hay sprites reales en el PACK, cada particula usa uno al azar.
+// Si no, cae al anillo generado por codigo.
         var mat = new Material(Shader.Find("Sprites/Default"));
-        mat.mainTexture = BubbleTexture();
+        int spriteCount = 0;
+        var packSprites = pack != null ? pack.bubbleSprites : null;
+        if (packSprites != null)
+        {
+            var tsa = ps.textureSheetAnimation;
+            tsa.enabled = false;
+            foreach (var s in packSprites)
+                if (s != null) { tsa.AddSprite(s); spriteCount++; }
+            if (spriteCount > 0)
+            {
+                tsa.enabled = true;
+                tsa.mode = ParticleSystemAnimationMode.Sprites;
+                // Frame inicial aleatorio + sin avance = cada particula se queda
+                // con una burbuja distinta toda su vida.
+                tsa.startFrame = new ParticleSystem.MinMaxCurve(0f, spriteCount - 1);
+                tsa.frameOverTime = new ParticleSystem.MinMaxCurve(0f);
+            }
+        }
+        if (spriteCount == 0)
+            mat.mainTexture = BubbleTexture();
         rend.material = mat;
 
         ps.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+    }
+
+    /// <summary>
+    /// La superficie sube con el nivel, asi que la vida util se recalcula:
+    /// vida = distancia / velocidad. Mueren justo al llegar arriba.
+    /// </summary>
+    private void UpdateBubbleZone(CellVisual cv, int level)
+    {
+        if (cv.foam == null) return;
+        float surface = level switch { 1 => surface1, 2 => surface2, _ => surface3 };
+        float spawnY = -BoardFx.CellSize * 0.32f;
+        float surfaceY = -BoardFx.CellSize * 0.5f + surface * BoardFx.CellSize;
+        float dist = Mathf.Max(0.05f, surfaceY - spawnY);
+        float life = dist / Mathf.Max(0.05f, bubbleRise);
+        var main = cv.foam.main;
+        // Atricion: la mitad muere en el camino (vida corta), unas cuantas
+        // llegan a la superficie. Asi no se satura en niveles altos.
+        main.startLifetime = new ParticleSystem.MinMaxCurve(life * 0.45f, life * 1.0f);
     }
 
     private void SetBubbleRate(CellVisual cv, int level)
     {
         if (cv.foam == null) return;
         var em = cv.foam.emission;
+        if (level <= 0)
+        {
+            // Celda vacia (exploto): no basta con tasa 0, hay que matar las
+            // vivas o se quedan flotando en el vaso vacio.
+            em.rateOverTime = 0f;
+            if (cv.foam.isPlaying)
+                cv.foam.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+            return;
+        }
+        UpdateBubbleZone(cv, level);
         // Sin liquido no hay burbujas; mas nivel = mas burbujeo.
-        em.rateOverTime = level <= 0 ? 0f : bubbleRate * level / 3f;
-        if (level > 0 && !cv.foam.isPlaying) cv.foam.Play();
+        em.rateOverTime = bubbleRate * level / 3f;
+        if (!cv.foam.isPlaying) cv.foam.Play();
     }
 
     /// <summary>
@@ -500,7 +620,7 @@ graph = PlayableGraph.Create("CellVisuals");
 
         // Tint SOLO del liquido. El cristal nunca se toca.
         if (cv.liquid != null)
-            cv.liquid.color = level <= 0 ? Color.clear : BoardFx.LiquidColorFor(owner);
+            cv.liquid.color = level <= 0 ? Color.clear : BoardFx.Boost(BoardFx.LiquidColorFor(owner));
 
         // Numero centrado: vacio en 0, blanco->rojo segun el nivel.
         if (cv.label != null)
@@ -514,8 +634,15 @@ graph = PlayableGraph.Create("CellVisuals");
             }
         }
 
-        // Burbujas solo con liquido.
+        // Burbujas solo con liquido, tintadas del color del dueño como el liquido.
         SetBubbleRate(cv, level);
+        if (cv.foam != null && level > 0)
+        {
+            var main = cv.foam.main;
+            var c = BoardFx.LiquidColorFor(owner);
+            c.a = bubbleAlpha;
+            main.startColor = c;
+        }
 
         if (!Ready) return;
 
@@ -656,6 +783,8 @@ private void OnExplosionFx(List<Vector2Int> chain, string boomKey)
         int n = match.game.gridSize;
         var pos = BoardFx.CellWorldPosition(coord.x, coord.y, n);
 
+        PlayBoomSound();
+
         var go = new GameObject($"Boom_{coord.x}_{coord.y}");
         // Sin colgar de "Game" (esta fuera del encuadre de la camara).
         go.transform.SetParent(cellsRoot != null ? cellsRoot : transform, false);
@@ -664,8 +793,8 @@ private void OnExplosionFx(List<Vector2Int> chain, string boomKey)
         var sr = go.AddComponent<SpriteRenderer>();
         sr.sortingOrder = explosionOrder;
         // El boom se tinta del color de QUIEN exploto (rosado jugador,
-        // naranja bot), no de un amarillo generico.
-        sr.color = BoardFx.LiquidColorFor(BoardFx.LastAttacker);
+        // naranja bot), con el boost de brillo igual que el liquido.
+        sr.color = BoardFx.Boost(BoardFx.LiquidColorFor(BoardFx.LastAttacker));
 
         // El boom es mas grande que el tablero: se dimensiona en celdas para
         // que desborde hacia las 4 vecinas.
@@ -688,6 +817,36 @@ private void OnExplosionFx(List<Vector2Int> chain, string boomKey)
 
         float life = pack.clipBoom.length / Mathf.Max(0.05f, pack.SpeedForLevel(4)) + 0.15f;
         StartCoroutine(ReleaseBoom(go, output, playable, life));
+    }
+
+    private void PlayBoomSound()
+    {
+        AudioClip clip = boomSound switch
+        {
+            BoomSoundMode.A => boomSoundA,
+            BoomSoundMode.B => boomSoundB,
+            _ => (useA ? boomSoundA : boomSoundB),
+        };
+        if (boomSound == BoomSoundMode.Alternar) useA = !useA;
+        if (clip == null) return;
+
+        if (sharedSfx == null)
+        {
+            // Reutiliza si ya existe (recarga de escena, duplicados). Por nombre
+            // para no agarrar otro AudioSource (musica futura, etc).
+            var existing = GameObject.Find("BoomSfx");
+            if (existing != null) sharedSfx = existing.GetComponent<AudioSource>();
+            if (sharedSfx == null)
+            {
+                var go = new GameObject("BoomSfx");
+                sharedSfx = go.AddComponent<AudioSource>();
+                sharedSfx.playOnAwake = false;
+            }
+        }
+        // Sin apilar: corta el anterior para que todas las explosiones suenen
+        // al mismo nivel, aunque vengan en cadena seguida.
+        sharedSfx.Stop();
+        sharedSfx.PlayOneShot(clip, boomVolume);
     }
 
     private IEnumerator ReleaseBoom(GameObject go, AnimationPlayableOutput output, AnimationClipPlayable playable, float life)

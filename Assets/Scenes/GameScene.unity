@@ -150,6 +150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   botDelay: 0.6
+  mode: 1
+  maxTurnsOverride: 30
 --- !u!4 &795379540
 Transform:
   m_ObjectHideFlags: 0
@@ -179,7 +181,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CellVisuals
   packId: clasico
   glassPrefab: {fileID: 3176565274343680119, guid: 653c78b8b3f6a32469aecb72b7860fc2, type: 3}
-  glassAlpha: 0.694
+  glassAlpha: 1
+  colorBoost: 1.4
+  bubbles: 0
+  bubbleSprites: []
+  bubbleRate: 5.31
+  bubbleSize: 0.07
+  bubbleRise: 0.08
+  bubbleDrift: 0
+  bubbleAlpha: 0.222
+  bubbleOrder: 1
+  surface1: 0.32
+  surface2: 0.59
+  surface3: 0.89
   clip1: {fileID: 7400000, guid: 10218248bd517f3499f0049139fd27c3, type: 2}
   clip2: {fileID: 7400000, guid: b3cded0ae158f5e41838451cc98aa35b, type: 2}
   clip3: {fileID: 7400000, guid: e95475ab538d8524c9c8ca4f16764c45, type: 2}
@@ -192,7 +206,11 @@ MonoBehaviour:
   numberHigh: {r: 1, g: 0, b: 0, a: 1}
   numberAlpha: 0.7
   numberFontSize: 4
-  numberSize: 0.248
+  numberSize: 1
+  boomSoundA: {fileID: 8300000, guid: a62231eec917d76488f45f7e5a7509a1, type: 3}
+  boomSoundB: {fileID: 8300000, guid: c1c0edd6f4daae6468d29297203611b6, type: 3}
+  boomSound: 1
+  boomVolume: 0.8
   shakeDuration: 0.22
   shakeStrength: 0.16
   crystalFill: 1

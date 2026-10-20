@@ -42,6 +42,9 @@ public class FxPack
         this.anim1 = anim1; this.anim2 = anim2; this.anim3 = anim3; this.animBoom = animBoom;
     }
 
+    /// <summary>Burbujas propias del pack (los especiales las traen, el clasico no).</summary>
+    public Sprite[] bubbleSprites;
+
     /// <summary>Clip real para un nivel (1-3). 4 = boom. Null si el pack no lo trae.</summary>
     public AnimationClip ClipForLevel(int level) => level switch
     {
@@ -107,7 +110,7 @@ public static class FxPackCatalog
     /// Adjunta el arte real a un pack existente sin pisar id/nombre/llaves.
     /// Lo llama CellVisuals en Awake con lo que hay en su Inspector.
     /// </summary>
-    public static void AttachArt(string packId, GameObject glass, AnimationClip c1, AnimationClip c2, AnimationClip c3, AnimationClip cBoom, float s1, float s2, float s3, float sBoom)
+    public static void AttachArt(string packId, GameObject glass, AnimationClip c1, AnimationClip c2, AnimationClip c3, AnimationClip cBoom, float s1, float s2, float s3, float sBoom, Sprite[] bubbles = null)
     {
         var pack = Get(packId);
         if (pack == null) return;
@@ -120,5 +123,6 @@ public static class FxPackCatalog
         pack.speed2 = s2;
         pack.speed3 = s3;
         pack.speedBoom = sBoom;
+        if (bubbles != null && bubbles.Length > 0) pack.bubbleSprites = bubbles;
     }
 }

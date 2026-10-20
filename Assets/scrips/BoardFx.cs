@@ -25,10 +25,21 @@ public static class BoardFx
     public static int LastAttacker = 1;
 
     // --- Paleta GDD (movida desde GameManager para no duplicarla) ---
+    // ColP1/ColP2 NO son readonly: el jugador los cambia en Personalizacion.
     public static readonly Color ColNeutral = new Color(0.12f, 0.16f, 0.28f); // azul noche
-    public static readonly Color ColP1 = new Color(1f, 0.15f, 0.6f);   // rosado neon
-    public static readonly Color ColP2 = new Color(1f, 0.45f, 0.05f);  // naranja electrico
+    public static Color ColP1 = PlayerColorOptions.Rosa;   // rosado neon
+    public static Color ColP2 = PlayerColorOptions.Naranja; // naranja electrico
     public static readonly Color ColBoom = new Color(1f, 0.85f, 0.3f);  // destello explosion
+
+    /// <summary>
+    /// Aplica el color del jugador. El enemigo NO se elige: sale automáticamente
+    /// opuesto (matiz +180°) para que nunca coincidan.
+    /// </summary>
+    public static void ApplyColors(int playerMode, Color custom)
+    {
+        ColP1 = PlayerColorOptions.Get(playerMode, custom);
+        ColP2 = PlayerColorOptions.OppositeOf(ColP1);
+    }
 
     // --- Layout del tablero en unidades de mundo (camara ortografica) ---
     /// <summary>Lado de una celda. Las animaciones son cuadradas, asi que 1x1.</summary>
@@ -47,6 +58,16 @@ public static class BoardFx
     };
 
     /// <summary>
+    /// Multiplicador de brillo. Los sprites del atlas estan desaturados y su
+    /// brillo maximo es ~0.74, asi que el tint normal queda lavado. Con boost
+    /// el pixel mas brillante llega a 1.0 y el color se ve vivo.
+    /// </summary>
+    public static float ColorBoost = 1.4f;
+
+    public static Color Boost(Color c)
+        => new Color(c.r * ColorBoost, c.g * ColorBoost, c.b * ColorBoost, c.a);
+
+    /// <summary>
     /// Posicion del centro de la celda (x, y) en world space, centrado en origen.
     /// gridSize celdas por lado, y crece hacia arriba.
     /// </summary>
@@ -63,5 +84,40 @@ public static class BoardFx
             var id = UGSProfileManager.Instance?.Profile.EquippedPackId;
             return FxPackCatalog.Get(id) ?? FxPackCatalog.Get("clasico");
         }
+    }
+}
+
+/// <summary>
+/// Color del jugador. El enemigo NO se elige: sale opuesto automaticamente.
+/// Modos: 0 = Rosa, 1 = Naranja, 2 = Personalizado (rueda de colores).
+/// </summary>
+public static class PlayerColorOptions
+{
+    public static readonly Color Rosa = new Color(1f, 0.15f, 0.6f);
+    public static readonly Color Naranja = new Color(1f, 0.45f, 0.05f);
+
+    public const int RosaIndex = 0;
+    public const int NaranjaIndex = 1;
+    public const int CustomIndex = 2;
+
+    public static readonly string[] Names = { "Rosa", "Naranja", "Personalizado" };
+
+    /// <summary>Color del jugador segun modo. En 2 usa el color de la rueda.</summary>
+    public static Color Get(int mode, Color custom) => Mathf.Clamp(mode, 0, CustomIndex) switch
+    {
+        RosaIndex => Rosa,
+        NaranjaIndex => Naranja,
+        _ => custom,
+    };
+
+    /// <summary>
+    /// Enemigo opuesto: matiz +180°. Con saturación y valor mínimos para que
+    /// nunca quede lavado ni igual al jugador.
+    /// </summary>
+    public static Color OppositeOf(Color c)
+    {
+        Color.RGBToHSV(c, out float h, out float s, out float v);
+        float hue = (h + 0.5f) % 1f;
+        return Color.HSVToRGB(hue, Mathf.Max(s, 0.55f), Mathf.Max(v, 0.65f));
     }
 }

@@ -15,16 +15,42 @@ public class GameManager : MonoBehaviour
     [Header("Prueba")]
     public float botDelay = 0.6f;
 
+    public enum MatchMode { Normal = 0, Infinito = 1 }
+    [Header("Modo de partida (prueba)")]
+    [Tooltip("Normal = usa MAX_TURNS de Remote Config. Infinito = sin limite, hasta eliminar.")]
+    public MatchMode mode = MatchMode.Normal;
+    [Tooltip("Limite de turnos: solo 30 a 100. Infinito se elige en Mode.")]
+    [Range(30, 100)] public int maxTurnsOverride = 30;
+
+    // El slider sube de 10 en 10 (30, 40, ... 100).
+    private void OnValidate()
+    {
+        maxTurnsOverride = Mathf.Clamp(Mathf.RoundToInt(maxTurnsOverride / 10f) * 10, 30, 100);
+    }
+
     private MatchController match;
     private GameLogic game => match.game;
 
     private Button[,] cells;
     private TMP_Text statusText;
     private TMP_Text turnText;
+    private TMP_Text timerText;
+    private TMP_Text turnCountText;
     private bool busy = false;
     private bool gameOver = false;
 
     private CellVisuals visuals;
+
+    // Recompensas si Cloud Code no responde (iguales que ValidateMatchResult.js)
+    private const int FallbackWinGems = 50;
+    private const int FallbackWinCoins = 100;
+    private const int FallbackLoseGems = 10;
+    private const int FallbackLoseCoins = 25;
+
+    private float matchStartTime;
+    private GameObject resultPanel;
+    private TMP_Text resultTitle;
+    private TMP_Text resultDetail;
 
     private void Start()
     {
@@ -32,7 +58,11 @@ public class GameManager : MonoBehaviour
         if (UGSProfileManager.Instance != null) diff = UGSProfileManager.Instance.SuggestedDifficulty;
         else diff = (BotAgent.Difficulty)Mathf.Clamp(UGSRemoteConfig.botDifficulty, 0, 2);
 
-        match = new MatchController(UGSRemoteConfig.gridSize, UGSRemoteConfig.maxCellLevel, UGSRemoteConfig.maxTurns, diff);
+        match = new MatchController(
+            UGSRemoteConfig.gridSize,
+            UGSRemoteConfig.maxCellLevel,
+            mode == MatchMode.Infinito ? 0 : Mathf.Clamp(maxTurnsOverride, 30, 100),
+            diff);
 
         visuals = GetComponent<CellVisuals>();
         if (visuals == null)
@@ -45,8 +75,23 @@ public class GameManager : MonoBehaviour
         }
         visuals.Bind(match);
 
+        matchStartTime = Time.time;
+
         BuildUI();
         Refresh();
+    }
+
+    private void Update()
+    {
+        // Cronometro de partida en vivo (arriba a la derecha).
+        if (!gameOver && timerText != null && match != null)
+            timerText.text = FormatTime(Time.time - matchStartTime);
+    }
+
+    private static string FormatTime(float seconds)
+    {
+        int s = Mathf.FloorToInt(seconds);
+        return $"{s / 60}:{s % 60:D2}";
     }
 
     private void BuildUI()
@@ -72,6 +117,8 @@ public class GameManager : MonoBehaviour
         // y SIN raycast: antes tapaba la fila superior y robaba los clics.
         turnText = MakeLabel(canvasGO.transform, "TurnText", 0, 440, 34);
         statusText = MakeLabel(canvasGO.transform, "StatusText", 0, 400, 24);
+        timerText = MakeLabel(canvasGO.transform, "TimerText", 330, 440, 18);
+        turnCountText = MakeLabel(canvasGO.transform, "TurnCountText", 330, 415, 18);
 
         // Tablero: los sprites world-space los dibuja CellVisuals. Aqui solo
         // van botones invisibles que capturan el click, alineados a la misma
@@ -135,9 +182,11 @@ public class GameManager : MonoBehaviour
         {
             StopAllCoroutines();
             match.Reset();
+            matchStartTime = Time.time;
             busy = false;
             gameOver = false;
             statusText.text = "";
+            if (resultPanel != null) resultPanel.SetActive(false);
             Refresh();
         });
         MakeButton(canvasGO.transform, "BackBtn", "Menu", 0, -485, () =>
@@ -296,22 +345,118 @@ public class GameManager : MonoBehaviour
         FinishMove(r);
     }
 
-    private void FinishMove(GameLogic.MoveResult r)
+private void FinishMove(GameLogic.MoveResult r)
     {
         busy = false;
         Refresh();
         if (r.gameOver)
         {
             gameOver = true;
-            if (r.winner == 0) statusText.text = "Empate.";
-            else if (r.winner == match.humanPlayer) statusText.text = "Ã‚Â¡Ganaste!";
-            else statusText.text = "GanÃƒÂ³ el Bot.";
-            _ = UGSProfileManager.Instance.RecordMatchResultAsync(r.winner == match.humanPlayer);
+            bool won = r.winner == match.humanPlayer;
+            bool draw = r.winner == 0;
+            _ = SubmitAndShowResultAsync(won, draw);
             return;
         }
         statusText.text = "";
         if (game.currentPlayer != match.humanPlayer)
             StartCoroutine(BotTurn());
+    }
+
+    // Pide las recompensas al servidor (anti-hack) y muestra el panel final.
+    // Si Cloud Code no responde, usa los valores locales de respaldo.
+    private async System.Threading.Tasks.Task SubmitAndShowResultAsync(bool won, bool draw)
+    {
+        float duration = Time.time - matchStartTime;
+        long gems = won ? FallbackWinGems : FallbackLoseGems;
+        long coins = won ? FallbackWinCoins : FallbackLoseCoins;
+
+        try
+        {
+            // GameScene abierta directo (sin menu) = UnityServices sin inicializar.
+            // Se inicializa aqui para no reventar con "Singleton is not initialized".
+            if (Unity.Services.Core.UnityServices.State != Unity.Services.Core.ServicesInitializationState.Initialized)
+            {
+                Debug.Log("[Game] Inicializando UnityServices desde GameScene...");
+                await Unity.Services.Core.UnityServices.InitializeAsync();
+            }
+
+            string myId = Unity.Services.Authentication.AuthenticationService.Instance != null
+                && Unity.Services.Authentication.AuthenticationService.Instance.IsSignedIn
+                ? Unity.Services.Authentication.AuthenticationService.Instance.PlayerId
+                : "LOCAL";
+            int myCells = game.CountCells(match.humanPlayer);
+            int botCells = game.CountCells(match.botPlayerId);
+            var res = await UGSCloudCodeManager.Instance.SubmitMatchResultAsync(
+                new UGSCloudCodeManager.MatchResult
+                {
+                    winnerId = draw ? myId : (won ? myId : "BOT"),
+                    loserId = draw ? "BOT" : (won ? "BOT" : myId),
+                    gridSize = game.gridSize,
+                    totalMoves = game.totalMoves,
+                    winnerCells = draw ? myCells : (won ? myCells : botCells),
+                    loserCells = draw ? botCells : (won ? botCells : myCells),
+                });
+            if (res != null && res.valid)
+            {
+                gems = res.gemsAwarded;
+                coins = res.coinsAwarded;
+            }
+        }
+        catch (System.Exception ex)
+        {
+            Debug.LogWarning($"[Game] Cloud Code no disponible, uso recompensa local: {ex.Message}");
+        }
+
+        ShowResultPanel(won, draw, duration, coins, gems);
+    }
+
+    private void ShowResultPanel(bool won, bool draw, float duration, long coins, long gems)
+    {
+        statusText.text = "";
+        if (resultPanel == null) BuildResultPanel();
+
+        resultTitle.text = draw ? "Empate." : (won ? "¡Ganaste!" : "Ganó el Bot.");
+        resultTitle.color = draw ? Color.white : (won ? BoardFx.ColP1 : BoardFx.ColP2);
+        resultDetail.text = $"Duración: {FormatTime(duration)}\n+{coins} monedas   +{gems} gemas";
+
+        resultPanel.SetActive(true);
+    }
+
+    private void BuildResultPanel()
+    {
+        var canvas = FindFirstObjectByType<Canvas>().transform;
+
+        resultPanel = new GameObject("ResultPanel");
+        resultPanel.transform.SetParent(canvas, false);
+        var rt = resultPanel.AddComponent<RectTransform>();
+        rt.anchorMin = Vector2.zero; rt.anchorMax = Vector2.one;
+        rt.offsetMin = Vector2.zero; rt.offsetMax = Vector2.zero;
+
+        // Fondo semitransparente (no intercepta: los botones siguen abajo).
+        var bg = resultPanel.AddComponent<UnityEngine.UI.Image>();
+        bg.color = new Color(0f, 0f, 0f, 0.55f);
+        bg.raycastTarget = false;
+
+        resultTitle = MakeLabel(resultPanel.transform, "ResultTitle", 0, 120, 44);
+        resultDetail = MakeLabel(resultPanel.transform, "ResultDetail", 0, 30, 28);
+
+        MakeButton(resultPanel.transform, "RematchBtn", "Revancha", 0, -80, () =>
+        {
+            resultPanel.SetActive(false);
+            StopAllCoroutines();
+            match.Reset();
+            matchStartTime = Time.time;
+            busy = false;
+            gameOver = false;
+            statusText.text = "";
+            Refresh();
+        });
+        MakeButton(resultPanel.transform, "ResultMenuBtn", "Menú", 0, -135, () =>
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
+        });
+
+resultPanel.SetActive(false);
     }
 
     private bool SpriteArt => visuals != null && visuals.Ready;
@@ -380,5 +525,9 @@ public class GameManager : MonoBehaviour
         if (spriteArt) visuals.SyncAll();
 
         turnText.text = game.currentPlayer == match.humanPlayer ? "Tu turno (Rosa)" : "Turno Bot (Naranja)";
+        // Desempate a la vista: turno actual / maximo (GDD: a los 30 gana quien tenga mas casillas).
+        // En infinito no hay corte: se muestra ∞.
+        if (turnCountText != null && game != null)
+            turnCountText.text = game.IsInfinite ? $"Turno {game.totalMoves}/∞" : $"Turno {game.totalMoves}/{game.maxTurns}";
     }
 }

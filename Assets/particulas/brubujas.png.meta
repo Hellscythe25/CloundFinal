@@ -1,0 +1,5499 @@
+fileFormatVersion: 2
+guid: 3fd903088d19d5446b688df836c8d371
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 797624443006212906
+    second: brubujas_0
+  - first:
+      213: 6174401894375551016
+    second: brubujas_1
+  - first:
+      213: 8492825528640035255
+    second: brubujas_2
+  - first:
+      213: 2706897400615456507
+    second: brubujas_3
+  - first:
+      213: -2412350722966123103
+    second: brubujas_4
+  - first:
+      213: -711443239660441481
+    second: brubujas_5
+  - first:
+      213: 1278959145823468361
+    second: brubujas_6
+  - first:
+      213: 2842092926684958891
+    second: brubujas_7
+  - first:
+      213: -7222872552461749855
+    second: brubujas_8
+  - first:
+      213: -163213003086458344
+    second: brubujas_9
+  - first:
+      213: 5485485018037442177
+    second: brubujas_10
+  - first:
+      213: 8908972383097411563
+    second: brubujas_11
+  - first:
+      213: -8641020185660744761
+    second: brubujas_12
+  - first:
+      213: -1414949030102517311
+    second: brubujas_13
+  - first:
+      213: 6965785778815063499
+    second: brubujas_14
+  - first:
+      213: -2781518293042727602
+    second: brubujas_15
+  - first:
+      213: -8561895938033735829
+    second: brubujas_16
+  - first:
+      213: 9190287953662145743
+    second: brubujas_17
+  - first:
+      213: -7072205932975539530
+    second: brubujas_18
+  - first:
+      213: -7724004938741338509
+    second: brubujas_19
+  - first:
+      213: 7934305259636669080
+    second: brubujas_20
+  - first:
+      213: -7739707950726322193
+    second: brubujas_21
+  - first:
+      213: -6966964021657953795
+    second: brubujas_22
+  - first:
+      213: -3336241548968725026
+    second: brubujas_23
+  - first:
+      213: -1277096480977926436
+    second: brubujas_24
+  - first:
+      213: 5186687485383289269
+    second: brubujas_25
+  - first:
+      213: -1495138447132211949
+    second: brubujas_26
+  - first:
+      213: 5494623360826077124
+    second: brubujas_27
+  - first:
+      213: -6701379755978753938
+    second: brubujas_28
+  - first:
+      213: 3533493177434684583
+    second: brubujas_29
+  - first:
+      213: -8192412698276856901
+    second: brubujas_30
+  - first:
+      213: -5563092111996740181
+    second: brubujas_31
+  - first:
+      213: 5998443716977247059
+    second: brubujas_32
+  - first:
+      213: -1154266756152482506
+    second: brubujas_33
+  - first:
+      213: 8764042115913698501
+    second: brubujas_34
+  - first:
+      213: 4201315321148726892
+    second: brubujas_35
+  - first:
+      213: -5690102612381784591
+    second: brubujas_36
+  - first:
+      213: -4351632460595913919
+    second: brubujas_37
+  - first:
+      213: -5368537966891091703
+    second: brubujas_38
+  - first:
+      213: 404783082907537905
+    second: brubujas_39
+  - first:
+      213: 6222396854566102139
+    second: brubujas_40
+  - first:
+      213: 8229401623467914002
+    second: brubujas_41
+  - first:
+      213: -9005099457796005691
+    second: brubujas_42
+  - first:
+      213: 5050668537976384498
+    second: brubujas_43
+  - first:
+      213: 4136015922879074560
+    second: brubujas_44
+  - first:
+      213: -7666245833062295212
+    second: brubujas_45
+  - first:
+      213: -9191178743174410204
+    second: brubujas_46
+  - first:
+      213: -3176593373644846981
+    second: brubujas_47
+  - first:
+      213: 5289024561263458824
+    second: brubujas_48
+  - first:
+      213: -8824090275830775981
+    second: brubujas_49
+  - first:
+      213: 2194560149093627806
+    second: brubujas_50
+  - first:
+      213: -711018822220890465
+    second: brubujas_51
+  - first:
+      213: -2159825029859122551
+    second: brubujas_52
+  - first:
+      213: -1898585329660013300
+    second: brubujas_53
+  - first:
+      213: -6010887363973556300
+    second: brubujas_54
+  - first:
+      213: -1497053761044680031
+    second: brubujas_55
+  - first:
+      213: 8838430205204350154
+    second: brubujas_56
+  - first:
+      213: 3531634350472737004
+    second: brubujas_57
+  - first:
+      213: -2011807135290947663
+    second: brubujas_58
+  - first:
+      213: -6603404623035603162
+    second: brubujas_59
+  - first:
+      213: 381167813937150273
+    second: brubujas_60
+  - first:
+      213: -8977139953023627333
+    second: brubujas_61
+  - first:
+      213: -6643774463865984911
+    second: brubujas_62
+  - first:
+      213: 6319050515730021763
+    second: brubujas_63
+  - first:
+      213: -5205643110993511426
+    second: brubujas_64
+  - first:
+      213: -7192456517794597560
+    second: brubujas_65
+  - first:
+      213: -5483580772398799714
+    second: brubujas_66
+  - first:
+      213: -5922542146042184483
+    second: brubujas_67
+  - first:
+      213: 5393608184461117073
+    second: brubujas_68
+  - first:
+      213: -7794906327355294620
+    second: brubujas_69
+  - first:
+      213: -110851207776689084
+    second: brubujas_70
+  - first:
+      213: 7050348531558516150
+    second: brubujas_71
+  - first:
+      213: 1729421749525099937
+    second: brubujas_72
+  - first:
+      213: 3561587272297181153
+    second: brubujas_73
+  - first:
+      213: 8106893390445133816
+    second: brubujas_74
+  - first:
+      213: -3464057747460062898
+    second: brubujas_75
+  - first:
+      213: -7648978348043053882
+    second: brubujas_76
+  - first:
+      213: 6135653931263735842
+    second: brubujas_77
+  - first:
+      213: -3398808109307739458
+    second: brubujas_78
+  - first:
+      213: 3376735190615364955
+    second: brubujas_79
+  - first:
+      213: -890565220498052354
+    second: brubujas_80
+  - first:
+      213: -1673334725475920454
+    second: brubujas_81
+  - first:
+      213: -5091873380062779008
+    second: brubujas_82
+  - first:
+      213: 1290753490456216345
+    second: brubujas_83
+  - first:
+      213: -1330416605352033338
+    second: brubujas_84
+  - first:
+      213: -8127900375554009376
+    second: brubujas_85
+  - first:
+      213: -1164202264691496634
+    second: brubujas_86
+  - first:
+      213: -8959404560342474925
+    second: brubujas_87
+  - first:
+      213: 4273013350037704405
+    second: brubujas_88
+  - first:
+      213: 6967515430584054574
+    second: brubujas_89
+  - first:
+      213: 5906221842704351801
+    second: brubujas_90
+  - first:
+      213: -7235355194457431396
+    second: brubujas_91
+  - first:
+      213: -533127058024026841
+    second: brubujas_92
+  - first:
+      213: 1029066859322627569
+    second: brubujas_93
+  - first:
+      213: -8242524646500281595
+    second: brubujas_94
+  - first:
+      213: 5409928346019252447
+    second: brubujas_95
+  - first:
+      213: 6598364174816960871
+    second: brubujas_96
+  - first:
+      213: 3788204763953246230
+    second: brubujas_97
+  - first:
+      213: -6630681893917529763
+    second: brubujas_98
+  - first:
+      213: -5081844018042082312
+    second: brubujas_99
+  - first:
+      213: 7917838340295912088
+    second: brubujas_100
+  - first:
+      213: 7223118745253390378
+    second: brubujas_101
+  - first:
+      213: -2104490239667641368
+    second: brubujas_102
+  - first:
+      213: 2942006156820283401
+    second: brubujas_103
+  - first:
+      213: 1047964811727101648
+    second: brubujas_104
+  - first:
+      213: -3413998200889671346
+    second: brubujas_105
+  - first:
+      213: 5174315552431910346
+    second: brubujas_106
+  - first:
+      213: -2855547012901171560
+    second: brubujas_107
+  - first:
+      213: -6300338263612554639
+    second: brubujas_108
+  - first:
+      213: -2839898813784360583
+    second: brubujas_109
+  - first:
+      213: -4528180447229522321
+    second: brubujas_110
+  - first:
+      213: 436889257188537412
+    second: brubujas_111
+  - first:
+      213: -2664286531499913841
+    second: brubujas_112
+  - first:
+      213: -879475653345699315
+    second: brubujas_113
+  - first:
+      213: 8433051393070255198
+    second: brubujas_114
+  - first:
+      213: -4541536950874152780
+    second: brubujas_115
+  - first:
+      213: -6165373086054185154
+    second: brubujas_116
+  - first:
+      213: -1130194964169735977
+    second: brubujas_117
+  - first:
+      213: -6495864843869274064
+    second: brubujas_118
+  - first:
+      213: 281107956571170849
+    second: brubujas_119
+  - first:
+      213: 7904674607322716273
+    second: brubujas_120
+  - first:
+      213: -4061904472702306885
+    second: brubujas_121
+  - first:
+      213: 8646530480049221929
+    second: brubujas_122
+  - first:
+      213: 7108651678193320644
+    second: brubujas_123
+  - first:
+      213: -69563106311446806
+    second: brubujas_124
+  - first:
+      213: 7761116271644063853
+    second: brubujas_125
+  - first:
+      213: -8123558825666474507
+    second: brubujas_126
+  - first:
+      213: 793217598674733058
+    second: brubujas_127
+  - first:
+      213: -7416369892959711967
+    second: brubujas_128
+  - first:
+      213: 6514340920812659248
+    second: brubujas_129
+  - first:
+      213: -9132543708841632206
+    second: brubujas_130
+  - first:
+      213: 6194844209166093774
+    second: brubujas_131
+  - first:
+      213: -7162193855494622553
+    second: brubujas_132
+  - first:
+      213: 2722258802095302201
+    second: brubujas_133
+  - first:
+      213: -3547364442293197030
+    second: brubujas_134
+  - first:
+      213: 467189637859066722
+    second: brubujas_135
+  - first:
+      213: -3356548923202583595
+    second: brubujas_136
+  - first:
+      213: 7352230811152779877
+    second: brubujas_137
+  - first:
+      213: -109296316355495690
+    second: brubujas_138
+  - first:
+      213: -6224193367774944025
+    second: brubujas_139
+  - first:
+      213: -7199615132572589019
+    second: brubujas_140
+  - first:
+      213: -9210283899745092043
+    second: brubujas_141
+  - first:
+      213: 3759995757581186846
+    second: brubujas_142
+  - first:
+      213: 5145980465374920814
+    second: brubujas_143
+  - first:
+      213: -381129258608997011
+    second: brubujas_144
+  - first:
+      213: 798129754992275994
+    second: brubujas_145
+  - first:
+      213: -7277035190938225336
+    second: brubujas_146
+  - first:
+      213: 3926370215727548102
+    second: brubujas_147
+  - first:
+      213: 1693532348557468785
+    second: brubujas_148
+  - first:
+      213: 1245322640745398218
+    second: brubujas_149
+  - first:
+      213: 6852416432678384783
+    second: brubujas_150
+  - first:
+      213: -683418108491132250
+    second: brubujas_151
+  - first:
+      213: -856913962046602626
+    second: brubujas_152
+  - first:
+      213: -8929300524069676664
+    second: brubujas_153
+  - first:
+      213: 755123655524563257
+    second: brubujas_154
+  - first:
+      213: 7696051478390455329
+    second: brubujas_155
+  - first:
+      213: 100212353576585394
+    second: brubujas_156
+  - first:
+      213: -1355012591608248177
+    second: brubujas_157
+  - first:
+      213: -5860735348846123187
+    second: brubujas_158
+  - first:
+      213: -3404929769065155280
+    second: brubujas_159
+  - first:
+      213: 948817984067286661
+    second: brubujas_160
+  - first:
+      213: -6067031147597583290
+    second: brubujas_161
+  - first:
+      213: 6883093607609926266
+    second: brubujas_162
+  - first:
+      213: -1269559113114627157
+    second: brubujas_163
+  - first:
+      213: 7447154487391257964
+    second: brubujas_164
+  - first:
+      213: -8853257147510601580
+    second: brubujas_165
+  - first:
+      213: -8055678741645722065
+    second: brubujas_166
+  - first:
+      213: 3185409438530566288
+    second: brubujas_167
+  - first:
+      213: 7470053210994140593
+    second: brubujas_168
+  - first:
+      213: -8880134348373979754
+    second: brubujas_169
+  - first:
+      213: -3490282048603165344
+    second: brubujas_170
+  - first:
+      213: -7333157863691280705
+    second: brubujas_171
+  - first:
+      213: 6568506149886840005
+    second: brubujas_172
+  - first:
+      213: 5481485358604012694
+    second: brubujas_173
+  - first:
+      213: -388122588251593400
+    second: brubujas_174
+  - first:
+      213: -2338571765564257581
+    second: brubujas_175
+  - first:
+      213: -6809103575504905849
+    second: brubujas_176
+  - first:
+      213: -4654349557534444626
+    second: brubujas_177
+  - first:
+      213: -5238511611551357203
+    second: brubujas_178
+  - first:
+      213: -1123341515838127392
+    second: brubujas_179
+  - first:
+      213: 6966171234657290655
+    second: brubujas_180
+  - first:
+      213: 1949825781431542804
+    second: brubujas_181
+  - first:
+      213: 1575780009820240382
+    second: brubujas_182
+  - first:
+      213: 716715834141270297
+    second: brubujas_183
+  - first:
+      213: 4473628916409089062
+    second: brubujas_184
+  - first:
+      213: 5539603252338989504
+    second: brubujas_185
+  - first:
+      213: -4519935060435659224
+    second: brubujas_186
+  - first:
+      213: 7818768172092985725
+    second: brubujas_187
+  - first:
+      213: -7097783135365316430
+    second: brubujas_188
+  - first:
+      213: -1572560968174465476
+    second: brubujas_189
+  - first:
+      213: 1137149344901028659
+    second: brubujas_190
+  - first:
+      213: -7936520670818657607
+    second: brubujas_191
+  - first:
+      213: -2877091925784656775
+    second: brubujas_192
+  - first:
+      213: 1521269058793758478
+    second: brubujas_193
+  - first:
+      213: 7331903224462642896
+    second: brubujas_194
+  - first:
+      213: -7977028431769080118
+    second: brubujas_195
+  - first:
+      213: -458554558637087593
+    second: brubujas_196
+  - first:
+      213: 1137886625079977247
+    second: brubujas_197
+  - first:
+      213: 4640670616066474588
+    second: brubujas_198
+  - first:
+      213: -5218746002626298766
+    second: brubujas_199
+  - first:
+      213: -6336708769030312696
+    second: brubujas_200
+  - first:
+      213: 2875893359402286082
+    second: brubujas_201
+  - first:
+      213: 2368667487589824458
+    second: brubujas_202
+  - first:
+      213: -8870638876187754537
+    second: brubujas_203
+  - first:
+      213: 6336526176809916393
+    second: brubujas_204
+  - first:
+      213: -8720239797595985088
+    second: brubujas_205
+  - first:
+      213: -5645623715848565671
+    second: brubujas_206
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: brubujas_0
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 1667
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2bdd85743bb11b00800000000000000
+      internalID: 797624443006212906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_1
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 1560
+        width: 79
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 820f0ce3fc1efa550800000000000000
+      internalID: 6174401894375551016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_2
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 1629
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b955f542d39cd570800000000000000
+      internalID: 8492825528640035255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_3
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1580
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfecc1718d4d09520800000000000000
+      internalID: 2706897400615456507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_4
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 1582
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad82f37ccb958ed0800000000000000
+      internalID: -2412350722966123103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_5
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 1535
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 770bf2694227026f0800000000000000
+      internalID: -711443239660441481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_6
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 1545
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94b7b012196cfb110800000000000000
+      internalID: 1278959145823468361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_7
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 1543
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba015b17574217720800000000000000
+      internalID: 2842092926684958891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_8
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1483
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a139949ea333cb90800000000000000
+      internalID: -7222872552461749855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1512
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8129e4073a62cbdf0800000000000000
+      internalID: -163213003086458344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_10
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 1473
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18659d08f8b502c40800000000000000
+      internalID: 5485485018037442177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_11
+      rect:
+        serializedVersion: 2
+        x: 1897
+        y: 1481
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be759404e2703ab70800000000000000
+      internalID: 8908972383097411563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_12
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 1420
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cb16b85cede41880800000000000000
+      internalID: -8641020185660744761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_13
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 1403
+        width: 70
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c9b4759a571d5ce0800000000000000
+      internalID: -1414949030102517311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_14
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 1462
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc55dbf62417ba060800000000000000
+      internalID: 6965785778815063499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_15
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1435
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e45ffee79df0669d0800000000000000
+      internalID: -2781518293042727602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_16
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1395
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b67a3a9d1090e2980800000000000000
+      internalID: -8561895938033735829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_17
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 1380
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc4759d93367a8f70800000000000000
+      internalID: 9190287953662145743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_18
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 1401
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ba35929c2a7add90800000000000000
+      internalID: -7072205932975539530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_19
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1328
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37ea5f68e62dec490800000000000000
+      internalID: -7724004938741338509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_20
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 1320
+        width: 140
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89a382c88905c1e60800000000000000
+      internalID: 7934305259636669080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_21
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1253
+        width: 79
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe7e0b320a8079490800000000000000
+      internalID: -7739707950726322193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_22
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1345
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df99626822f505f90800000000000000
+      internalID: -6966964021657953795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_23
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 1363
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed5f1d4ccf943b1d0800000000000000
+      internalID: -3336241548968725026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_24
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 1369
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd6c8635487d64ee0800000000000000
+      internalID: -1277096480977926436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_25
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 1360
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b92c37a9c0daf740800000000000000
+      internalID: 5186687485383289269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_26
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 1358
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 315c7a00183304be0800000000000000
+      internalID: -1495138447132211949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_27
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 1280
+        width: 95
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cfe99cb5d2d04c40800000000000000
+      internalID: 5494623360826077124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_28
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1265
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6874eb0e9aeff2a0800000000000000
+      internalID: -6701379755978753938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_29
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 1308
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7acb249d25d790130800000000000000
+      internalID: 3533493177434684583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_30
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 1290
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbbfec16e04be4e80800000000000000
+      internalID: -8192412698276856901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_31
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 1302
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bad18abd23debc2b0800000000000000
+      internalID: -5563092111996740181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_32
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 1247
+        width: 79
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3534a9b87c0ce3350800000000000000
+      internalID: 5998443716977247059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_33
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 1197
+        width: 134
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6352d7730883bffe0800000000000000
+      internalID: -1154266756152482506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_34
+      rect:
+        serializedVersion: 2
+        x: 1766
+        y: 1250
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cc499bded120a970800000000000000
+      internalID: 8764042115913698501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_35
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1094
+        width: 132
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6ed97a66021e4a30800000000000000
+      internalID: 4201315321148726892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_36
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 1251
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f5267d42d1b801b0800000000000000
+      internalID: -5690102612381784591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_37
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 1212
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14b1f114555eb93c0800000000000000
+      internalID: -4351632460595913919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_38
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 1262
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9093240b92f1f75b0800000000000000
+      internalID: -5368537966891091703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_39
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 1240
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f19acbb1141e9500800000000000000
+      internalID: 404783082907537905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_40
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 1215
+        width: 89
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b74abe7b8f46a5650800000000000000
+      internalID: 6222396854566102139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_41
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 1233
+        width: 57
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 213f3d0ec25b43270800000000000000
+      internalID: 8229401623467914002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_42
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 1178
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c0a10311c5770380800000000000000
+      internalID: -9005099457796005691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_43
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1233
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fbe2549644971640800000000000000
+      internalID: 5050668537976384498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_44
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 1204
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 001119c7194166930800000000000000
+      internalID: 4136015922879074560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_45
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 1237
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 459d08748060c9590800000000000000
+      internalID: -7666245833062295212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_46
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1217
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 420d7f941af527080800000000000000
+      internalID: -9191178743174410204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_47
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 1142
+        width: 94
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b780a0038297ae3d0800000000000000
+      internalID: -3176593373644846981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_48
+      rect:
+        serializedVersion: 2
+        x: 1866
+        y: 1233
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80abc66e0d3666940800000000000000
+      internalID: 5289024561263458824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_49
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 1209
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35fb02b65a88a8580800000000000000
+      internalID: -8824090275830775981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_50
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1185
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9734fc04d4a47e10800000000000000
+      internalID: 2194560149093627806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_51
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 1200
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9e38e8f524f126f0800000000000000
+      internalID: -711018822220890465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_52
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 1175
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 982ef3e1492c602e0800000000000000
+      internalID: -2159825029859122551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_53
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 1092
+        width: 84
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c05d8d9a3bed6a5e0800000000000000
+      internalID: -1898585329660013300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_54
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 1175
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b7d87d1ac9059ca0800000000000000
+      internalID: -6010887363973556300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_55
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 1197
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a2f44b3985693be0800000000000000
+      internalID: -1497053761044680031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_56
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 1060
+        width: 141
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac4c941917968aa70800000000000000
+      internalID: 8838430205204350154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_57
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 1192
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce0be78fab2e20130800000000000000
+      internalID: 3531634350472737004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_58
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1188
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b70368c110a414e0800000000000000
+      internalID: -2011807135290947663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_59
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 1170
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6276acf4b7efb54a0800000000000000
+      internalID: -6603404623035603162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_60
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 1073
+        width: 98
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14939857b1e2a4500800000000000000
+      internalID: 381167813937150273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_61
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 1179
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbf4f0196caca6380800000000000000
+      internalID: -8977139953023627333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_62
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 1154
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 178e47943529cc3a0800000000000000
+      internalID: -6643774463865984911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_63
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 1156
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38d36dbd6f6c1b750800000000000000
+      internalID: 6319050515730021763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_64
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1167
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efbb5c5db27d1c7b0800000000000000
+      internalID: -5205643110993511426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_65
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 1158
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 845f86287e24f2c90800000000000000
+      internalID: -7192456517794597560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_66
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 962
+        width: 137
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e94e10c375866e3b0800000000000000
+      internalID: -5483580772398799714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_67
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1132
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddc30e11c47eecda0800000000000000
+      internalID: -5922542146042184483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_68
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 1076
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 196c1743112f9da40800000000000000
+      internalID: 5393608184461117073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_69
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 1137
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46cfa849efde2d390800000000000000
+      internalID: -7794906327355294620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_70
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 1117
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4442c81f96d267ef0800000000000000
+      internalID: -110851207776689084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_71
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 1123
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b50e3692aed7d160800000000000000
+      internalID: 7050348531558516150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_72
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 1051
+        width: 101
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a537471be3200810800000000000000
+      internalID: 1729421749525099937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_73
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1094
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ef63d901cc4d6130800000000000000
+      internalID: 3561587272297181153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_74
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 1108
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ffb1712698718070800000000000000
+      internalID: 8106893390445133816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_75
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 1048
+        width: 68
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e41043105d13defc0800000000000000
+      internalID: -3464057747460062898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_76
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 1040
+        width: 42
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c45d3ee7be59d590800000000000000
+      internalID: -7648978348043053882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_77
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 1069
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22834bd0eb8362550800000000000000
+      internalID: 6135653931263735842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_78
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 1099
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb2cef0480205d0d0800000000000000
+      internalID: -3398808109307739458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_79
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 997
+        width: 128
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b559031e3c29cde20800000000000000
+      internalID: 3376735190615364955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_80
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 1023
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efa65ee76a314a3f0800000000000000
+      internalID: -890565220498052354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_81
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1005
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab59ea1deee17c8e0800000000000000
+      internalID: -1673334725475920454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_82
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 1025
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 089271483280659b0800000000000000
+      internalID: -5091873380062779008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_83
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 943
+        width: 152
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9130d3bf57da9e110800000000000000
+      internalID: 1290753490456216345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_84
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 1057
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c306b27529698de0800000000000000
+      internalID: -1330416605352033338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_85
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 875
+        width: 251
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e6d6510ca5e33f80800000000000000
+      internalID: -8127900375554009376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_86
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 728
+        width: 259
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 649ab5e553ce7dfe0800000000000000
+      internalID: -1164202264691496634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_87
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 1009
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35f95c5750dc9a380800000000000000
+      internalID: -8959404560342474925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_88
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 995
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5decf71a00bcc4b30800000000000000
+      internalID: 4273013350037704405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_89
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 1027
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e23f30f5e5691b060800000000000000
+      internalID: 6967515430584054574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_90
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 939
+        width: 73
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 932cb03397d17f150800000000000000
+      internalID: 5906221842704351801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_91
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 995
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92669209cad69b90800000000000000
+      internalID: -7235355194457431396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_92
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 962
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72d245ee3c3f998f0800000000000000
+      internalID: -533127058024026841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_93
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 910
+        width: 52
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f55d083bdaf74e00800000000000000
+      internalID: 1029066859322627569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_94
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 952
+        width: 71
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 503d2f8318bac9d80800000000000000
+      internalID: -8242524646500281595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_95
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 912
+        width: 68
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd84bccea2de31b40800000000000000
+      internalID: 5409928346019252447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_96
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 820
+        width: 87
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 761e0a2e149129b50800000000000000
+      internalID: 6598364174816960871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_97
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 955
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61030eb7928629430800000000000000
+      internalID: 3788204763953246230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_98
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 953
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d596e66c2f51bf3a0800000000000000
+      internalID: -6630681893917529763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_99
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 933
+        width: 56
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb68a45ac9a979b0800000000000000
+      internalID: -5081844018042082312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_100
+      rect:
+        serializedVersion: 2
+        x: 1905
+        y: 951
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89a6e4e1500d1ed60800000000000000
+      internalID: 7917838340295912088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_101
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 922
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a282b45aa3cad3460800000000000000
+      internalID: 7223118745253390378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_102
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 908
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e3655fe6495bc2e0800000000000000
+      internalID: -2104490239667641368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_103
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 892
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9000940230b14d820800000000000000
+      internalID: 2942006156820283401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_104
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 901
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0de5a14a17e1b8e00800000000000000
+      internalID: 1047964811727101648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_105
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 857
+        width: 76
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e41062479ba0f90d0800000000000000
+      internalID: -3413998200889671346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_106
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 400
+        width: 301
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acdab7a849cdec740800000000000000
+      internalID: 5174315552431910346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_107
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 666
+        width: 247
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89e09900f1f0f58d0800000000000000
+      internalID: -2855547012901171560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_108
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 826
+        width: 119
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1728298dab3b098a0800000000000000
+      internalID: -6300338263612554639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_109
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 858
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97974564317a698d0800000000000000
+      internalID: -2839898813784360583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_110
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 518
+        width: 189
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6ec304efdba821c0800000000000000
+      internalID: -4528180447229522321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_111
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 870
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44438e4f674201600800000000000000
+      internalID: 436889257188537412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_112
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 870
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d071ef38d860bd0800000000000000
+      internalID: -2664286531499913841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_113
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 660
+        width: 101
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a99bd8d897bc3f0800000000000000
+      internalID: -879475653345699315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_114
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 775
+        width: 67
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5cc090df87380570800000000000000
+      internalID: 8433051393070255198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_115
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 803
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b0e5dc843839f0c0800000000000000
+      internalID: -4541536950874152780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_116
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 809
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e378cf108d1307aa0800000000000000
+      internalID: -6165373086054185154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_117
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 820
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d04ab90badb050f0800000000000000
+      internalID: -1130194964169735977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_118
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 820
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0304930575d0ad5a0800000000000000
+      internalID: -6495864843869274064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_119
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 822
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 128e5f67232b6e300800000000000000
+      internalID: 281107956571170849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_120
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 765
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1785582bcab03bd60800000000000000
+      internalID: 7904674607322716273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_121
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 718
+        width: 118
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb53209276731a7c0800000000000000
+      internalID: -4061904472702306885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_122
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 798
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 921fbea09a5aef770800000000000000
+      internalID: 8646530480049221929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_123
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 692
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c282beb90107a260800000000000000
+      internalID: 7108651678193320644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_124
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 592
+        width: 108
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee55de29bcd80ff0800000000000000
+      internalID: -69563106311446806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_125
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 732
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6839dff02605bb60800000000000000
+      internalID: 7761116271644063853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_126
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 650
+        width: 122
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fd092cd942534f80800000000000000
+      internalID: -8123558825666474507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_127
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 712
+        width: 67
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 208889e0433120b00800000000000000
+      internalID: 793217598674733058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_128
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 698
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12d0c3f30e2c31990800000000000000
+      internalID: -7416369892959711967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_129
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 666
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03264d29d86976a50800000000000000
+      internalID: 6514340920812659248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_130
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 675
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e14c212efa24180800000000000000
+      internalID: -9132543708841632206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_131
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 634
+        width: 70
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecd0b3e8cf188f550800000000000000
+      internalID: 6194844209166093774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_132
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 649
+        width: 97
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a2f1c6a2a6ca9c90800000000000000
+      internalID: -7162193855494622553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_133
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 567
+        width: 126
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 936229515f767c520800000000000000
+      internalID: 2722258802095302201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_134
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 679
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a172340a5da35cec0800000000000000
+      internalID: -3547364442293197030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_135
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 593
+        width: 154
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2634557108acb7600800000000000000
+      internalID: 467189637859066722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_136
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 654
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d34a41c9842b61d0800000000000000
+      internalID: -3356548923202583595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_137
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 651
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56a817d08fe580660800000000000000
+      internalID: 7352230811152779877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_138
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 607
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f83f505493bb7ef0800000000000000
+      internalID: -109296316355495690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_139
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 658
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e4ae64fb193f99a0800000000000000
+      internalID: -6224193367774944025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_140
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 613
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 524eb7f9e24d51c90800000000000000
+      internalID: -7199615132572589019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_141
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 550
+        width: 86
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53eb133679f7e2080800000000000000
+      internalID: -9210283899745092043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_142
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 616
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e173a9f58303e2430800000000000000
+      internalID: 3759995757581186846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_143
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 600
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6085cbf7f13a6740800000000000000
+      internalID: 5145980465374920814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_144
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 541
+        width: 87
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6d4a1765f4f5baf0800000000000000
+      internalID: -381129258608997011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_145
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 393
+        width: 124
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12fbf298c6831b00800000000000000
+      internalID: 798129754992275994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_146
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 455
+        width: 193
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8453c1a9c07c20b90800000000000000
+      internalID: -7277035190938225336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_147
+      rect:
+        serializedVersion: 2
+        x: 1727
+        y: 599
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c64d1d88e44d7630800000000000000
+      internalID: 3926370215727548102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_148
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 572
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 174a663c2b2a08710800000000000000
+      internalID: 1693532348557468785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_149
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 588
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acf71600856484110800000000000000
+      internalID: 1245322640745398218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_150
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 547
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8438da907ca81f50800000000000000
+      internalID: 6852416432678384783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_151
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 435
+        width: 147
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a2115ae9d20486f0800000000000000
+      internalID: -683418108491132250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_152
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 548
+        width: 53
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e72c329aa41ab14f0800000000000000
+      internalID: -856913962046602626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_153
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 562
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8891e1a9b70c41480800000000000000
+      internalID: -8929300524069676664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_154
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 523
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9393901c6fcba7a00800000000000000
+      internalID: 755123655524563257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_155
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 535
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12c359e4b0eddca60800000000000000
+      internalID: 7696051478390455329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_156
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 514
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b8c909ca96046100800000000000000
+      internalID: 100212353576585394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_157
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 508
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8842032a37023de0800000000000000
+      internalID: -1355012591608248177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_158
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 532
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d47a371704c7aaea0800000000000000
+      internalID: -5860735348846123187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_159
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 512
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 035f7b54a624fb0d0800000000000000
+      internalID: -3404929769065155280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_160
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 208
+        width: 195
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58635d0fde0ea2d00800000000000000
+      internalID: 948817984067286661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_161
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 276
+        width: 176
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64c2736d0539dcba0800000000000000
+      internalID: -6067031147597583290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_162
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 445
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a720a5dfa29a58f50800000000000000
+      internalID: 6883093607609926266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_163
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 373
+        width: 86
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba3517986be916ee0800000000000000
+      internalID: -1269559113114627157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_164
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 421
+        width: 87
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c658960bc8b995760800000000000000
+      internalID: 7447154487391257964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_165
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 406
+        width: 105
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4984179e789e22580800000000000000
+      internalID: -8853257147510601580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_166
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 410
+        width: 68
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2e7a838dda743090800000000000000
+      internalID: -8055678741645722065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_167
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 427
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0987acfd109d43c20800000000000000
+      internalID: 3185409438530566288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_168
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 415
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b5629e31d5faa760800000000000000
+      internalID: 7470053210994140593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_169
+      rect:
+        serializedVersion: 2
+        x: 1865
+        y: 395
+        width: 85
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69d8c6febdc63c480800000000000000
+      internalID: -8880134348373979754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_170
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 158
+        width: 191
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06de51718f6009fc0800000000000000
+      internalID: -3490282048603165344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_171
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 0
+        width: 444
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbe91d496c36b3a90800000000000000
+      internalID: -7333157863691280705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_172
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 338
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cc49f8ba85082b50800000000000000
+      internalID: 6568506149886840005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_173
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 404
+        width: 56
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69cc81934e5221c40800000000000000
+      internalID: 5481485358604012694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_174
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 392
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84565f5ff8c1d9af0800000000000000
+      internalID: -388122588251593400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_175
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 157
+        width: 313
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dac8c79e59bb8fd0800000000000000
+      internalID: -2338571765564257581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_176
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 377
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 789103fcf543181a0800000000000000
+      internalID: -6809103575504905849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_177
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 289
+        width: 73
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea3b9aabcbd686fb0800000000000000
+      internalID: -4654349557534444626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_178
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 310
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de6e8b1b1711d47b0800000000000000
+      internalID: -5238511611551357203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_179
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 3
+        width: 343
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e20503d7d61960f0800000000000000
+      internalID: -1123341515838127392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_180
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 293
+        width: 73
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f99ca4e54dfcca060800000000000000
+      internalID: 6966171234657290655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_181
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 192
+        width: 84
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4142024b73c2f0b10800000000000000
+      internalID: 1949825781431542804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_182
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 270
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef93f71f19b4ed510800000000000000
+      internalID: 1575780009820240382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_183
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 0
+        width: 296
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91163eaf04942f900800000000000000
+      internalID: 716715834141270297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_184
+      rect:
+        serializedVersion: 2
+        x: 1862
+        y: 202
+        width: 89
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62cba731cc5851e30800000000000000
+      internalID: 4473628916409089062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_185
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 139
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c99344decf90ec40800000000000000
+      internalID: 5539603252338989504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_186
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 210
+        width: 66
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82616ea9207f541c0800000000000000
+      internalID: -4519935060435659224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_187
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 10
+        width: 227
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d719bb61a38d18c60800000000000000
+      internalID: 7818768172092985725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_188
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 178
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b0cac318db9f7d90800000000000000
+      internalID: -7097783135365316430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_189
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 113
+        width: 90
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e015891242d2ae0800000000000000
+      internalID: -1572560968174465476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_190
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 125
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33bd467ed47f7cf00800000000000000
+      internalID: 1137149344901028659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_191
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 71
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ba1f47df70dbd190800000000000000
+      internalID: -7936520670818657607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_192
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 122
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 974067113248218d0800000000000000
+      internalID: -2877091925784656775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_193
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 100
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0fd1312622ac1510800000000000000
+      internalID: 1521269058793758478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_194
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 79
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0de03a5f22720c560800000000000000
+      internalID: 7331903224462642896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_195
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 18
+        width: 49
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace6639c7e6eb4190800000000000000
+      internalID: -7977028431769080118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_196
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 70
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 794ec46fe03e2a9f0800000000000000
+      internalID: -458554558637087593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_197
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 81
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f156f825bd59acf00800000000000000
+      internalID: 1137886625079977247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_198
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 83
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c524c368659f66040800000000000000
+      internalID: 4640670616066474588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_199
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 85
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27c3874292a4397b0800000000000000
+      internalID: -5218746002626298766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_200
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 24
+        width: 118
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80d68d8a2fc7f08a0800000000000000
+      internalID: -6336708769030312696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_201
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 73
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20cf313f5c939e720800000000000000
+      internalID: 2875893359402286082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_202
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 35
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac7feccb7823fd020800000000000000
+      internalID: 2368667487589824458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_203
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 45
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dffe06d0f825e480800000000000000
+      internalID: -8870638876187754537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_204
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 26
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e718b64cfcdfe750800000000000000
+      internalID: 6336526176809916393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_205
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 19
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04b211c1b1c7bf680800000000000000
+      internalID: -8720239797595985088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brubujas_206
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 20
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95c43596427b6a1b0800000000000000
+      internalID: -5645623715848565671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      brubujas_0: 797624443006212906
+      brubujas_1: 6174401894375551016
+      brubujas_10: 5485485018037442177
+      brubujas_100: 7917838340295912088
+      brubujas_101: 7223118745253390378
+      brubujas_102: -2104490239667641368
+      brubujas_103: 2942006156820283401
+      brubujas_104: 1047964811727101648
+      brubujas_105: -3413998200889671346
+      brubujas_106: 5174315552431910346
+      brubujas_107: -2855547012901171560
+      brubujas_108: -6300338263612554639
+      brubujas_109: -2839898813784360583
+      brubujas_11: 8908972383097411563
+      brubujas_110: -4528180447229522321
+      brubujas_111: 436889257188537412
+      brubujas_112: -2664286531499913841
+      brubujas_113: -879475653345699315
+      brubujas_114: 8433051393070255198
+      brubujas_115: -4541536950874152780
+      brubujas_116: -6165373086054185154
+      brubujas_117: -1130194964169735977
+      brubujas_118: -6495864843869274064
+      brubujas_119: 281107956571170849
+      brubujas_12: -8641020185660744761
+      brubujas_120: 7904674607322716273
+      brubujas_121: -4061904472702306885
+      brubujas_122: 8646530480049221929
+      brubujas_123: 7108651678193320644
+      brubujas_124: -69563106311446806
+      brubujas_125: 7761116271644063853
+      brubujas_126: -8123558825666474507
+      brubujas_127: 793217598674733058
+      brubujas_128: -7416369892959711967
+      brubujas_129: 6514340920812659248
+      brubujas_13: -1414949030102517311
+      brubujas_130: -9132543708841632206
+      brubujas_131: 6194844209166093774
+      brubujas_132: -7162193855494622553
+      brubujas_133: 2722258802095302201
+      brubujas_134: -3547364442293197030
+      brubujas_135: 467189637859066722
+      brubujas_136: -3356548923202583595
+      brubujas_137: 7352230811152779877
+      brubujas_138: -109296316355495690
+      brubujas_139: -6224193367774944025
+      brubujas_14: 6965785778815063499
+      brubujas_140: -7199615132572589019
+      brubujas_141: -9210283899745092043
+      brubujas_142: 3759995757581186846
+      brubujas_143: 5145980465374920814
+      brubujas_144: -381129258608997011
+      brubujas_145: 798129754992275994
+      brubujas_146: -7277035190938225336
+      brubujas_147: 3926370215727548102
+      brubujas_148: 1693532348557468785
+      brubujas_149: 1245322640745398218
+      brubujas_15: -2781518293042727602
+      brubujas_150: 6852416432678384783
+      brubujas_151: -683418108491132250
+      brubujas_152: -856913962046602626
+      brubujas_153: -8929300524069676664
+      brubujas_154: 755123655524563257
+      brubujas_155: 7696051478390455329
+      brubujas_156: 100212353576585394
+      brubujas_157: -1355012591608248177
+      brubujas_158: -5860735348846123187
+      brubujas_159: -3404929769065155280
+      brubujas_16: -8561895938033735829
+      brubujas_160: 948817984067286661
+      brubujas_161: -6067031147597583290
+      brubujas_162: 6883093607609926266
+      brubujas_163: -1269559113114627157
+      brubujas_164: 7447154487391257964
+      brubujas_165: -8853257147510601580
+      brubujas_166: -8055678741645722065
+      brubujas_167: 3185409438530566288
+      brubujas_168: 7470053210994140593
+      brubujas_169: -8880134348373979754
+      brubujas_17: 9190287953662145743
+      brubujas_170: -3490282048603165344
+      brubujas_171: -7333157863691280705
+      brubujas_172: 6568506149886840005
+      brubujas_173: 5481485358604012694
+      brubujas_174: -388122588251593400
+      brubujas_175: -2338571765564257581
+      brubujas_176: -6809103575504905849
+      brubujas_177: -4654349557534444626
+      brubujas_178: -5238511611551357203
+      brubujas_179: -1123341515838127392
+      brubujas_18: -7072205932975539530
+      brubujas_180: 6966171234657290655
+      brubujas_181: 1949825781431542804
+      brubujas_182: 1575780009820240382
+      brubujas_183: 716715834141270297
+      brubujas_184: 4473628916409089062
+      brubujas_185: 5539603252338989504
+      brubujas_186: -4519935060435659224
+      brubujas_187: 7818768172092985725
+      brubujas_188: -7097783135365316430
+      brubujas_189: -1572560968174465476
+      brubujas_19: -7724004938741338509
+      brubujas_190: 1137149344901028659
+      brubujas_191: -7936520670818657607
+      brubujas_192: -2877091925784656775
+      brubujas_193: 1521269058793758478
+      brubujas_194: 7331903224462642896
+      brubujas_195: -7977028431769080118
+      brubujas_196: -458554558637087593
+      brubujas_197: 1137886625079977247
+      brubujas_198: 4640670616066474588
+      brubujas_199: -5218746002626298766
+      brubujas_2: 8492825528640035255
+      brubujas_20: 7934305259636669080
+      brubujas_200: -6336708769030312696
+      brubujas_201: 2875893359402286082
+      brubujas_202: 2368667487589824458
+      brubujas_203: -8870638876187754537
+      brubujas_204: 6336526176809916393
+      brubujas_205: -8720239797595985088
+      brubujas_206: -5645623715848565671
+      brubujas_21: -7739707950726322193
+      brubujas_22: -6966964021657953795
+      brubujas_23: -3336241548968725026
+      brubujas_24: -1277096480977926436
+      brubujas_25: 5186687485383289269
+      brubujas_26: -1495138447132211949
+      brubujas_27: 5494623360826077124
+      brubujas_28: -6701379755978753938
+      brubujas_29: 3533493177434684583
+      brubujas_3: 2706897400615456507
+      brubujas_30: -8192412698276856901
+      brubujas_31: -5563092111996740181
+      brubujas_32: 5998443716977247059
+      brubujas_33: -1154266756152482506
+      brubujas_34: 8764042115913698501
+      brubujas_35: 4201315321148726892
+      brubujas_36: -5690102612381784591
+      brubujas_37: -4351632460595913919
+      brubujas_38: -5368537966891091703
+      brubujas_39: 404783082907537905
+      brubujas_4: -2412350722966123103
+      brubujas_40: 6222396854566102139
+      brubujas_41: 8229401623467914002
+      brubujas_42: -9005099457796005691
+      brubujas_43: 5050668537976384498
+      brubujas_44: 4136015922879074560
+      brubujas_45: -7666245833062295212
+      brubujas_46: -9191178743174410204
+      brubujas_47: -3176593373644846981
+      brubujas_48: 5289024561263458824
+      brubujas_49: -8824090275830775981
+      brubujas_5: -711443239660441481
+      brubujas_50: 2194560149093627806
+      brubujas_51: -711018822220890465
+      brubujas_52: -2159825029859122551
+      brubujas_53: -1898585329660013300
+      brubujas_54: -6010887363973556300
+      brubujas_55: -1497053761044680031
+      brubujas_56: 8838430205204350154
+      brubujas_57: 3531634350472737004
+      brubujas_58: -2011807135290947663
+      brubujas_59: -6603404623035603162
+      brubujas_6: 1278959145823468361
+      brubujas_60: 381167813937150273
+      brubujas_61: -8977139953023627333
+      brubujas_62: -6643774463865984911
+      brubujas_63: 6319050515730021763
+      brubujas_64: -5205643110993511426
+      brubujas_65: -7192456517794597560
+      brubujas_66: -5483580772398799714
+      brubujas_67: -5922542146042184483
+      brubujas_68: 5393608184461117073
+      brubujas_69: -7794906327355294620
+      brubujas_7: 2842092926684958891
+      brubujas_70: -110851207776689084
+      brubujas_71: 7050348531558516150
+      brubujas_72: 1729421749525099937
+      brubujas_73: 3561587272297181153
+      brubujas_74: 8106893390445133816
+      brubujas_75: -3464057747460062898
+      brubujas_76: -7648978348043053882
+      brubujas_77: 6135653931263735842
+      brubujas_78: -3398808109307739458
+      brubujas_79: 3376735190615364955
+      brubujas_8: -7222872552461749855
+      brubujas_80: -890565220498052354
+      brubujas_81: -1673334725475920454
+      brubujas_82: -5091873380062779008
+      brubujas_83: 1290753490456216345
+      brubujas_84: -1330416605352033338
+      brubujas_85: -8127900375554009376
+      brubujas_86: -1164202264691496634
+      brubujas_87: -8959404560342474925
+      brubujas_88: 4273013350037704405
+      brubujas_89: 6967515430584054574
+      brubujas_9: -163213003086458344
+      brubujas_90: 5906221842704351801
+      brubujas_91: -7235355194457431396
+      brubujas_92: -533127058024026841
+      brubujas_93: 1029066859322627569
+      brubujas_94: -8242524646500281595
+      brubujas_95: 5409928346019252447
+      brubujas_96: 6598364174816960871
+      brubujas_97: 3788204763953246230
+      brubujas_98: -6630681893917529763
+      brubujas_99: -5081844018042082312
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

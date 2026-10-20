@@ -6,6 +6,8 @@ public class UIManager : MonoBehaviour
     [Header("Paneles de Navegación")]
     public GameObject authPanel;      // Contenedor padre de Auth (que agrupa mainMenu, login y register)
     public GameObject homeMenuPanel;  // El nuevo Menú Principal tras autenticarse
+    public GameObject shopPanel;          // Tienda (lo creas tu manual)
+    public GameObject customizationPanel; // Personalizacion (lo creas tu manual)
 
     [Header("Sub-Paneles de Autenticación")]
     public GameObject mainMenuPanel;
@@ -19,6 +21,24 @@ public class UIManager : MonoBehaviour
     public TMP_InputField registerPassword;
     public TMP_Text statusText;
     public TMP_Text playerNameText;    // Texto en HomeMenuPanel donde se mostrará el nombre
+
+    [Header("Monedas (arrastra los 3 pares: Home, Tienda, Personalizacion)")]
+    public TMP_Text[] coinsTexts;
+    public TMP_Text[] gemsTexts;
+
+    [Header("Personalizacion de colores (todo con imagenes, sin texto)")]
+    [Tooltip("El GameObject que tiene el script ColorWheel (arrastra el mismo, no la Image).")]
+    public ColorWheel colorWheel;
+
+    [Header("Previews (Image con color solido)")]
+    [Tooltip("Image que muestra TU color.")]
+    public UnityEngine.UI.Image playerColorPreview;
+    [Tooltip("Image que muestra el color del ENEMIGO (siempre opuesto al tuyo).")]
+    public UnityEngine.UI.Image enemyColorPreview;
+
+    [Header("Botones de color (cada uno con el script ColorSwatch)")]
+    [Tooltip("Cada uno es un GameObject con Button + ColorSwatch. El seleccionado se agranda.")]
+    public ColorSwatch[] playerColorSwatches;
 
     private void Start()
     {
@@ -68,12 +88,53 @@ public class UIManager : MonoBehaviour
         else Debug.LogWarning("[UI] authPanel es null, no se puede ocultar.");
         if (homeMenuPanel != null) homeMenuPanel.SetActive(true);
         else Debug.LogWarning("[UI] homeMenuPanel es null, no se puede mostrar.");
+        if (shopPanel != null) shopPanel.SetActive(false);
+        if (customizationPanel != null) customizationPanel.SetActive(false);
 
         // Actualizar el nombre del jugador usando la nueva función de UGSAuthManager
         if (playerNameText != null && UGSAuthManager.Instance != null)
         {
             playerNameText.text = "Jugador: " + UGSAuthManager.Instance.GetPlayerName();
         }
+
+        _ = RefreshCurrencyTexts();
+    }
+
+    /// <summary>Tienda: apaga Home y prende Shop. Conecta tu boton Tienda a este metodo.</summary>
+    public void ShowShop()
+    {
+        Debug.Log("[UI] Mostrando ShopPanel.");
+        if (homeMenuPanel != null) homeMenuPanel.SetActive(false);
+        if (customizationPanel != null) customizationPanel.SetActive(false);
+        if (shopPanel != null) shopPanel.SetActive(true);
+        else Debug.LogWarning("[UI] shopPanel es null, asignalo en el Inspector.");
+
+        _ = RefreshCurrencyTexts();
+    }
+
+    /// <summary>Personalizacion: apaga Home y prende Custom. Conecta tu boton a este metodo.</summary>
+    public void ShowCustomization()
+    {
+        Debug.Log("[UI] Mostrando CustomizationPanel.");
+        if (homeMenuPanel != null) homeMenuPanel.SetActive(false);
+        if (shopPanel != null) shopPanel.SetActive(false);
+        if (customizationPanel != null) customizationPanel.SetActive(true);
+        else Debug.LogWarning("[UI] customizationPanel es null, asignalo en el Inspector.");
+
+        _ = RefreshCurrencyTexts();
+        RefreshColorPreviews();
+    }
+
+    /// <summary>Lee balances de la nube y los escribe en los 3 pares de textos.</summary>
+    public async System.Threading.Tasks.Task RefreshCurrencyTexts()
+    {
+        await UGSEconomy.RefreshAsync();
+        if (coinsTexts != null)
+            foreach (var t in coinsTexts)
+                if (t != null) t.text = UGSEconomy.Coins.ToString();
+        if (gemsTexts != null)
+            foreach (var t in gemsTexts)
+                if (t != null) t.text = UGSEconomy.Gems.ToString();
     }
 
     public void ShowMainMenu()
@@ -96,6 +157,68 @@ public class UIManager : MonoBehaviour
         if (loginPanel != null) loginPanel.SetActive(false);
         if (registerPanel != null) registerPanel.SetActive(true);
     }
+
+    // --- Personalizacion: color de tu ficha (el enemigo sale opuesto) ---
+    // Rosa = 0, Naranja = 1, Personalizado = 2 (rueda). Conecta tus botones a estos.
+
+    public void OnClickPlayerColorMode(int mode)
+    {
+        if (UGSProfileManager.Instance == null) return;
+        if (playerColorSwatches == null || mode < 0 || mode >= playerColorSwatches.Length) return;
+        var sw = playerColorSwatches[mode];
+        if (sw == null) return;
+        // El color sale del propio boton (cristal + liquido ya armados).
+        _ = UGSProfileManager.Instance.SetCustomColorAsync(sw.Color);
+        RefreshColorPreviews();
+    }
+
+    /// <summary>Lo llama la rueda al arrastrar. Activa modo Personalizado.</summary>
+    public void OnWheelColorChanged(Color c)
+    {
+        if (UGSProfileManager.Instance == null) return;
+        _ = UGSProfileManager.Instance.SetCustomColorAsync(c);
+        RefreshColorPreviews();
+    }
+
+    /// <summary>Pinta los previews y marca el boton de color seleccionado.</summary>
+    public void RefreshColorPreviews()
+    {
+        if (UGSProfileManager.Instance == null) return;
+
+        if (playerColorPreview != null)
+        {
+            playerColorPreview.color = BoardFx.ColP1;
+            playerColorPreview.raycastTarget = false;
+        }
+        if (enemyColorPreview != null)
+        {
+            enemyColorPreview.color = BoardFx.ColP2;
+            enemyColorPreview.raycastTarget = false;
+        }
+
+        UpdateSwatchSelection();
+    }
+
+    // El seleccionado se agranda; los demas vuelven a escala normal.
+    // Opcional: si el boton tiene un hijo llamado "SelectedFrame", se enciende.
+    private void UpdateSwatchSelection()
+    {
+        if (playerColorSwatches == null) return;
+        Color current = BoardFx.ColP1;
+        for (int i = 0; i < playerColorSwatches.Length; i++)
+        {
+            var sw = playerColorSwatches[i];
+            if (sw == null) continue;
+            bool selected = ColorCloseEnough(sw.Color, current);
+            sw.transform.localScale = selected ? Vector3.one * 1.18f : Vector3.one;
+
+            var frame = sw.transform.Find("SelectedFrame");
+            if (frame != null) frame.gameObject.SetActive(selected);
+        }
+    }
+
+    private static bool ColorCloseEnough(Color a, Color b)
+        => Mathf.Abs(a.r - b.r) < 0.02f && Mathf.Abs(a.g - b.g) < 0.02f && Mathf.Abs(a.b - b.b) < 0.02f;
 
     // --- ACCIONES DE AUTENTICACIÓN Y TRANSICIÓN AL HOME ---
     public async void OnClickGuest()

@@ -24,6 +24,14 @@ public class UGSProfileManager
         // Pack de animaciones equipado (lo cambia el jugador en su UI)
         public List<string> OwnedPackIds = new List<string> { "clasico" };
         public string EquippedPackId = "clasico";
+        // Monedas virtuales (Economy esta cerrado para proyectos nuevos,
+        // asi que viven en Cloud Save y las otorga Cloud Code).
+        public long Coins = 0;
+        public long Gems = 0;
+        // Color de tu ficha (modo: 0 rosa, 1 naranja, 2 personalizado) y el color
+        // custom de la rueda. El enemigo sale opuesto, no se guarda.
+        public int PlayerColorMode = 0;
+        public Color PlayerCustomColor = new Color(1f, 0.15f, 0.6f);
     }
 
     public PlayerProfile Profile = new PlayerProfile();
@@ -51,12 +59,27 @@ public class UGSProfileManager
         if (!CanUseCloudSave()) { Debug.LogWarning("[Profile] Sin sesion, perfil local."); return; }
         try
         {
-            var keys = new HashSet<string> { "PlayerName", "SkinsOwned", "EquippedSkin", "TotalWins", "TotalMatches", "OwnedPacks", "EquippedPack" };
+            var keys = new HashSet<string> { "PlayerName", "SkinsOwned", "EquippedSkin", "TotalWins", "TotalMatches", "OwnedPacks", "EquippedPack", "Coins", "Gems", "PlayerColor", "EnemyColor" };
             var data = await CloudSaveService.Instance.Data.Player.LoadAsync(keys);
             if (data.TryGetValue("PlayerName", out var n)) Profile.PlayerName = n.Value.GetAs<string>();
             if (data.TryGetValue("EquippedSkin", out var s)) Profile.EquippedSkin = s.Value.GetAs<string>();
             if (data.TryGetValue("TotalWins", out var w)) Profile.TotalWins = w.Value.GetAs<int>();
             if (data.TryGetValue("TotalMatches", out var m)) Profile.TotalMatches = m.Value.GetAs<int>();
+            if (data.TryGetValue("Coins", out var c)) Profile.Coins = c.Value.GetAs<long>();
+            if (data.TryGetValue("Gems", out var g)) Profile.Gems = g.Value.GetAs<long>();
+            if (data.TryGetValue("PlayerColor", out var pc)) Profile.PlayerColorMode = pc.Value.GetAs<int>();
+            if (data.TryGetValue("PlayerCustomColor", out var pcc))
+            {
+                string csv = pcc.Value.GetAs<string>();
+                if (!string.IsNullOrEmpty(csv))
+                {
+                    var parts = csv.Split(',');
+                    if (parts.Length == 3 &&
+                        int.TryParse(parts[0], out int rr) && int.TryParse(parts[1], out int gg) && int.TryParse(parts[2], out int bb))
+                        Profile.PlayerCustomColor = new Color(rr / 255f, gg / 255f, bb / 255f);
+                }
+            }
+            ApplyColors();
             if (data.TryGetValue("SkinsOwned", out var sk))
             {
                 string skinsJson = sk.Value.GetAs<string>();
@@ -89,6 +112,10 @@ public class UGSProfileManager
                 { "TotalWins", Profile.TotalWins },
                 { "TotalMatches", Profile.TotalMatches },
                 { "EquippedPack", Profile.EquippedPackId },
+                { "Coins", Profile.Coins },
+                { "Gems", Profile.Gems },
+                { "PlayerColor", Profile.PlayerColorMode },
+                { "PlayerCustomColor", $"{Mathf.RoundToInt(Profile.PlayerCustomColor.r * 255)},{Mathf.RoundToInt(Profile.PlayerCustomColor.g * 255)},{Mathf.RoundToInt(Profile.PlayerCustomColor.b * 255)}" },
                 { "SkinsOwned", JsonUtility.ToJson(new SkinList { skins = Profile.SkinsOwned }) },
                 { "OwnedPacks", JsonUtility.ToJson(new SkinList { skins = Profile.OwnedPackIds }) }
             };
@@ -123,6 +150,46 @@ public class UGSProfileManager
         Profile.EquippedPackId = packId;
         await SaveProfileAsync();
         return true;
+    }
+
+    // Suma monedas (las otorga Cloud Code tras validar la partida). Guarda en la nube.
+    public async Task GrantCurrencyAsync(long coins, long gems)
+    {
+        Profile.Coins = System.Math.Max(0, Profile.Coins + coins);
+        Profile.Gems = System.Math.Max(0, Profile.Gems + gems);
+        await SaveProfileAsync();
+    }
+
+    // Gasta monedas en la tienda. False si no alcanza. Guarda en la nube.
+    public async Task<bool> SpendCurrencyAsync(long coins, long gems)
+    {
+        if (Profile.Coins < coins || Profile.Gems < gems) return false;
+        Profile.Coins -= coins;
+        Profile.Gems -= gems;
+        await SaveProfileAsync();
+        return true;
+    }
+
+    // --- Color de ficha (Personalizacion) ---
+    /// <summary>Pinta el tablero con tu color. El enemigo sale opuesto.</summary>
+    public void ApplyColors()
+        => BoardFx.ApplyColors(Profile.PlayerColorMode, Profile.PlayerCustomColor);
+
+    /// <summary>Elige el modo de color: 0 rosa, 1 naranja, 2 personalizado. Guarda.</summary>
+    public async Task SetPlayerColorModeAsync(int mode)
+    {
+        Profile.PlayerColorMode = Mathf.Clamp(mode, 0, PlayerColorOptions.CustomIndex);
+        ApplyColors();
+        await SaveProfileAsync();
+    }
+
+    /// <summary>Color libre desde la rueda. Activa el modo Personalizado. Guarda.</summary>
+    public async Task SetCustomColorAsync(Color c)
+    {
+        Profile.PlayerCustomColor = c;
+        Profile.PlayerColorMode = PlayerColorOptions.CustomIndex;
+        ApplyColors();
+        await SaveProfileAsync();
     }
 
     [System.Serializable] private class SkinList { public List<string> skins; }

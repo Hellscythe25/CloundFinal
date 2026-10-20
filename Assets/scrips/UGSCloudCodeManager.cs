@@ -34,6 +34,7 @@ public class UGSCloudCodeManager
     {
         public bool valid;
         public int gemsAwarded;
+        public int coinsAwarded;
         public int newMmr;
         public string message;
     }
@@ -57,7 +58,7 @@ public class UGSCloudCodeManager
                 { "loserCells", result.loserCells }
             };
             var response = await CloudCodeService.Instance.CallEndpointAsync<RewardResponse>(endpoint, args);
-            Debug.Log($"[CloudCode] valid={response.valid} gems={response.gemsAwarded} mmr={response.newMmr} msg={response.message}");
+            Debug.Log($"[CloudCode] valid={response.valid} gems={response.gemsAwarded} coins={response.coinsAwarded} mmr={response.newMmr} msg={response.message}");
 
             if (response.valid)
             {
